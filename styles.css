@@ -1,0 +1,65 @@
+body {
+	background: #684bb1 url('../images/bg-mobile.svg') no-repeat;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	margin: 40px;
+}
+
+.logoImage {
+	max-width: 120px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.mockupImage {
+	max-width: 296px;
+	margin-top: 70px;
+}
+
+.registerHeading {
+	font-family: 'Poppins', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+	margin-top: 60px;
+}
+
+.registerText {
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+	margin-top: 16px;
+}
+
+.registerButton {
+	margin: 0 auto;
+	margin-top: 24px;
+	display: block;
+	width: 200px;
+	height: 40px;
+	background-color: #fff;
+	color: #684bb1;
+	border-radius: 20px;
+	border: 0px solid #fff;
+	box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.27);
+}
+
+.social {
+	margin: 0 auto;
+	margin-top: 64px;
+	text-align: center;
+}
+
+.socialIcons {
+	color: #fff;
+	padding-left: 12px;
+}
+
+.socialIcons:nth-of-type(1) {
+	color: #fff;
+	padding-left: 0;
+}
