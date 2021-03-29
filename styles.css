@@ -4,7 +4,9 @@ body {
 }
 
 .container {
+	position: relative;
 	margin: 40px;
+	height: calc(100vh - 160px);
 }
 
 .logoImage {
@@ -18,6 +20,9 @@ body {
 	margin-top: 70px;
 }
 
+.register {
+	line-height: 24px;
+}
 .registerHeading {
 	font-family: 'Poppins', sans-serif;
 	font-size: 24px;
@@ -39,6 +44,7 @@ body {
 	margin: 0 auto;
 	margin-top: 24px;
 	display: block;
+	font-family: 'Poppins', sans-serif;
 	width: 200px;
 	height: 40px;
 	background-color: #fff;
@@ -46,6 +52,12 @@ body {
 	border-radius: 20px;
 	border: 0px solid #fff;
 	box-shadow: 1px 4px 5px 0px rgba(0, 0, 0, 0.27);
+	cursor: pointer;
+}
+
+.registerButton:active {
+	background-color: #e880e8;
+	color: #fff;
 }
 
 .social {
@@ -62,4 +74,66 @@ body {
 .socialIcons:nth-of-type(1) {
 	color: #fff;
 	padding-left: 0;
+}
+
+.socialIcons:active {
+	color: #ff52c1;
+}
+
+@media (min-width: 376px) {
+	body {
+		background: #684bb1 url('../images/bg-desktop.svg') no-repeat;
+		padding: 0;
+		margin: 0;
+	}
+
+	.container {
+		margin: 80px;
+	}
+
+	.logoImage {
+		max-width: 200px;
+	}
+
+	.mockupImage {
+		min-width: 696px;
+		float: left;
+	}
+
+	.register {
+		float: right;
+		max-width: 520px;
+		margin-left: 60px;
+		margin-top: 32px;
+	}
+
+	.register > .registerHeading,
+	.registerText {
+		text-align: left;
+	}
+	.registerHeading {
+		font-size: 40px;
+		line-height: 60px;
+	}
+
+	.registerText {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.registerButton {
+		height: 56px;
+		margin: 0;
+		margin-top: 24px;
+		font-size: 18px;
+		line-height: 27px;
+		border-radius: 28px;
+	}
+
+	.social {
+		position: absolute;
+		bottom: -40px;
+		right: 0;
+		font-size: 40px;
+	}
 }
